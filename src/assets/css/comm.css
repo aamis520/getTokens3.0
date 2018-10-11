@@ -1,0 +1,170 @@
+/* 引入阿里图标库 */
+@font-face {
+  font-family: 'iconfont';  /* project id 840765 */
+  src: url('//at.alicdn.com/t/font_840765_08uckzfogjyk.eot');
+  src: url('//at.alicdn.com/t/font_840765_08uckzfogjyk.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_840765_08uckzfogjyk.woff') format('woff'),
+  url('//at.alicdn.com/t/font_840765_08uckzfogjyk.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_840765_08uckzfogjyk.svg#iconfont') format('svg');
+}
+
+/* 覆盖群成员中 Message 弹出框 */
+.creatGroupContainer .mint-msgbox{
+  width:540px !important;
+  height: 340px !important;
+  border-radius: 24px;
+}
+/*
+* 覆盖mint-ui中search框
+*/
+.mint-searchbar-inner{
+  height: 30px !important;
+}
+.mint-searchbar{
+  background-color: #f2f2f2;
+}
+.mint-searchbar-inner .mintui-search {
+  font-size: 0.46rem;
+}
+/*
+* 覆盖mint-ui中的checkoutlist
+*/
+.mint-checklist-label {
+  text-align: left;
+}
+.mint-cell{
+  min-height: 0.94rem;
+}
+.mint-checkbox-core{
+  border: 0.023333rem solid #ccc;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.mint-checkbox-core::after {
+  width: 0.14rem;
+  height: 0.306667rem;
+  top: 0.04rem;
+  left: 0.17rem;
+}
+.mint-actionsheet-listitem,
+.mint-actionsheet-button {
+  font-size: 16px;/*px*/
+  line-height: 40px !important;
+  height: 40px !important;
+}
+
+/* 下边是input输入框的placehoder的颜色 */
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-size: 14px;/*px*/
+  /* WebKit browsers */
+  color: #666;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  font-size: 14px;/*px*/
+  /* Mozilla Firefox 4 to 18 */
+  color: #666;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  font-size: 14px;/*px*/
+  /* Mozilla Firefox 19+ */
+  color: #666;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-size: 14px;/*px*/
+  /* Internet Explorer 10+ */
+  color: #666;
+}
+
+.redRemark_tabbar a {
+  color: black;
+}
+
+.tabBar a {
+  color: #010101;
+}
+
+.mint-toast-icon {
+  font-size: 30px;
+  /*px*/
+}
+
+.mint-toast-text {
+  font-size: 16px;
+  /*px*/
+}
+
+.switch {
+  position: absolute;
+  right: -20px;
+  width: 100px;
+  transform: scale(1.5);
+  text-align: right;
+}
+
+.mint-switch-input:checked+.mint-switch-core {
+  transform: scale(1.5);
+  border-color: #6698FF;
+  background-color: #6698FF;
+}
+.mint-switch-core{
+  transform: scale(1.5);
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: rgba(255, 255, 255, .2);
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+/*定义滑块 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, .4);
+}
+
+/* router-link :to 点击时出现下划线问题 */
+
+.router-link-active {
+  text-decoration: none;
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {}
+
+/* 清楚浮动 */
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}

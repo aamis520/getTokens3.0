@@ -1,0 +1,7 @@
+{
+  "name": "gettokens",
+  "ios_identifier": "",
+  "android_identifier": "",
+  "update": "resume",
+  "content_url": "http://r.zhuandian.net:9899/gettokens"
+}
